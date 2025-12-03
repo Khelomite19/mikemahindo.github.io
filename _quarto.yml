@@ -1,0 +1,65 @@
+project:
+  type: website
+output-dir: "docs"
+
+website:
+    title: "Dr. Mike Mahindo Blog"
+    description: "Espaço dedicado à saúdeSaúde da Mulher Saúde para todos da mulher, ginecologia e obstetrícia, com foco em cuidados clínicos, cirúrgicos e prevenção, coordenado pelo Dr. Mahindo Molemakya Mike de Cabinda em Angola"
+    open-graph: true
+    twitter-card: true
+    page-navigation: true
+    back-to-top-navigation: true
+    navbar:
+      search: true
+      logo:  "assets/images/LOGOCMF.png"
+      left:
+        - icon: house-fill
+          text: "Home"
+          file: index.qmd
+        - text: "Blog"
+          file: blog.qmd
+      right:
+        - text: "Sobre mim"
+          file: about.qmd
+        - icon: linkedin
+          href: https://linkedin.com/in/mike-mahindo-7478779a
+        - icon: twitter
+          href: https://twitter.com
+        - icon: rss
+          href: index.xml # lien vers le flux RSS
+ 
+format:
+  html:
+    twitter-card:
+      creator: "babbymed"
+      card-style: summary_large_image
+    page-footer:
+      left: "© Copyright 2024 Ekumbo Babby. Sauf indication contraire, tous les textes et images sont sous licence CC-BY-NC 4.0."
+    utterances:
+      repo: ecohealth-data.github.io
+    reference-location: document
+    code-link: true
+    anchor-sections: true
+    #fig-cap-location: margin
+    #reference-location: margin
+    mainfont: "Lato"
+    monofont: "Fira Mono"
+    footnotes-hover: true
+    fontsize: 1em
+    theme:
+      light: minty   #flatly     #pretty  minty
+          #- brand
+      dark: superhero  #darkly
+    css:
+      - styles.scss
+    lang: pt
+    date-format: 'dddd[, the] Do [of] MMMM, YYYY'
+    highlight-style: github-dark
+    meta:
+      viewport: "width=device-width, initial-scale=1"
+  
+
+title-block-banner: "#6f42c1"
+title-block-banner-color: body
+editor: visual
+
